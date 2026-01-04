@@ -1,8 +1,28 @@
-const input = document.getElementById('test-input')
 const button = document.getElementById('test-btn')
+const image = document.getElementById('result-img')
 
-button.addEventListener('click', () => {
-  const value = input.value
-  alert(`你輸入的內容是：${value}`)
-})
+function fetchAndSetImage() {
+  axios
+    .get('https://dog.ceo/api/breeds/image/random')
+    .then(response => {
+      image.src = response.data.message
+    })
+    .catch(error => {
+      console.error(error)
+    })
+}
+
+// async function fetchAndSetImage() {
+//   try {
+//     const response = await axios.get(
+//       'https://dog.ceo/api/breeds/image/random'
+//     )
+//     image.src = response.data.message
+//   } catch (error) {
+//     console.error(error)
+//   }
+// }
+
+fetchAndSetImage()
+button.addEventListener('click', fetchAndSetImage)
 
