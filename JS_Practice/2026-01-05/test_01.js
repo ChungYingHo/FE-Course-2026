@@ -1,18 +1,18 @@
 const classmates = [
   {
-    name: "Alice",
+    name: 'Alice',
     chinese: 85,
     math: 92,
     english: 88
   },
   {
-    name: "Bob",
+    name: 'Bob',
     chinese: 78,
     math: 81,
     english: 79
   },
   {
-    name: "Charlie",
+    name: 'Charlie',
     chinese: 90,
     math: 87,
     english: 93

@@ -8,12 +8,12 @@ function mockFetchApi() {
 function fetchDataWithRetry(retryTimes) {
 
 
-  for(let i = 0 ; i < retryTimes ; i++){
+  for(let i = 0; i < retryTimes; i++){
     if(mockFetchApi()){
-      return '200'
+      return 200
     }
   }
-  return '500'
+  return 500
 }
 
 // Expected output:

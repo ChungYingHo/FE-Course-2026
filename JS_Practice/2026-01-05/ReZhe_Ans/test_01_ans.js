@@ -1,18 +1,18 @@
 const classmates = [
   {
-    name: "Alice",
+    name: 'Alice',
     chinese: 85,
     math: 92,
     english: 88
   },
   {
-    name: "Bob",
+    name: 'Bob',
     chinese: 78,
     math: 81,
     english: 79
   },
   {
-    name: "Charlie",
+    name: 'Charlie',
     chinese: 90,
     math: 87,
     english: 93
@@ -23,12 +23,12 @@ const classmates = [
 function calcAverageScoresForStudents(classmatesArray) {
   const result = []
 
-  const classmatesResult = classmates.forEach(classmates => {
+  classmatesArray.forEach(classmate => {
 
-    const course = (classmates.chinese + classmates.math + classmates.english)/3
+    const course = (classmate.chinese + classmate.math + classmate.english)/3
 
     result.push({
-      name: classmates.name,
+      name: classmate.name,
       average: Number(course.toFixed(2))
     })
   })
