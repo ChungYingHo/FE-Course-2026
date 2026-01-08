@@ -1,0 +1,23 @@
+{
+  "name": "fe_course_2026",
+  "version": "1.0.0",
+  "description": "JS Practice for FE Course 2026",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChungYingHo/FE-Course-2026.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChungYingHo/FE-Course-2026/issues"
+  },
+  "homepage": "https://github.com/ChungYingHo/FE-Course-2026#readme",
+  "devDependencies": {
+    "eslint": "^9.39.2"
+  }
+}
