@@ -25,7 +25,7 @@ function calcAverageScoresForStudents(classmatesArray) {
 
   const classmatesResult = classmates.forEach(classmates => {
 
-    const course = (classmates.chinese + classmates.math + classmates.english)
+    const course = (classmates.chinese + classmates.math + classmates.english)/3
 
     result.push({
       name: classmates.name,
