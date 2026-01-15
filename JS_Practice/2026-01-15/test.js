@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* ------------------------------------------------
 題目 1：變數宣告與重新賦值
 ------------------------------------------------ */
@@ -128,7 +129,7 @@ function scopeTest() {
   }
 
   console.log(a)
-  // console.log(b)
+  console.log(b)
 }
 
 scopeTest()
