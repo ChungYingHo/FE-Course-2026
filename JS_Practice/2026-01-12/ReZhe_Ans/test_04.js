@@ -16,7 +16,7 @@ let reversed = '' //變數reversed，去創造空字串
 
 for(let i = input.length; i >= 1; i--){  //使用for迴圈 i=length去取input長度
   reversed = reversed + input[i - 1]  //更新reversed,如果不加-1的話比如輸入'hello'會出現undefined
-                                      // 因為在跑得時候不加的話跑0-5，而'5'不存在，所以加入-1會跑0-4就會變'olleh'
+  // 因為在跑得時候不加的話跑0-5，而'5'不存在，所以加入-1會跑0-4就會變'olleh'
 }
 
 console.log(reversed) //用console印出來(f12)

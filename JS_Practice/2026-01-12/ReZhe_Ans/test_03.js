@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 // Problem Description
 // You are going to create a simple timer that counts seconds.
 
