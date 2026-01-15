@@ -6,3 +6,12 @@
 ```
 
 ## 作業放置區
+
+```
+1. [[Stack] 20. Valid Parentheses](https://vocus.cc/article/69688f3afd89780001c204a2)
+
+2. [[Stack] 20. Valid Parentheses](https://vocus.cc/article/6968a58efd89780001c820a1)
+
+3. [[Stack] 20. Valid Parentheses](https://vocus.cc/article/6968c04afd89780001cf339b)
+
+```
