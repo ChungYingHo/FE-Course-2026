@@ -7,8 +7,8 @@
 
 ## 作業放置區
 
-1. [[Stack] 20. Valid Parentheses](https://vocus.cc/article/69688f3afd89780001c204a2)
+1. [了解非同步 & 同步、call back queue、call stack、web api](https://vocus.cc/article/69688f3afd89780001c204a2)
 
-2. [[Stack] 20. Valid Parentheses](https://vocus.cc/article/6968a58efd89780001c820a1)
+2. [了解callback hell、Promise、async/await](https://vocus.cc/article/6968a58efd89780001c820a1)
 
-3. [[Stack] 20. Valid Parentheses](https://vocus.cc/article/6968c04afd89780001cf339b)
+3. [了解npm、package、axios](https://vocus.cc/article/6968c04afd89780001cf339b)
