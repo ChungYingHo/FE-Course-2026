@@ -6,8 +6,8 @@
  */
 
 const students = [
-  { name: "Alice", scores: [80, 90, 100] },
-  { name: "Bob", scores: [70, 85, 90] }
+  { name: 'Alice', scores: [80, 90, 100] },
+  { name: 'Bob', scores: [70, 85, 90] }
 ]
 
 function calculateAverage(scores) {
