@@ -1,0 +1,92 @@
+/* =========================================
+   基本設定
+   ========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* =========================================
+   版面結構（預設：桌機）
+   ========================================= */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+}
+
+.card {
+  flex: 1 1 calc(33.333% - 16px);
+  background: #f2f2f2;
+  padding: 24px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* =========================================
+   RWD（max-width）- 目前啟用
+   Desktop → Tablet → Mobile
+   ========================================= */
+
+/* 平板：兩欄（<= 768px） */
+@media (max-width: 768px) {
+  .card {
+    /* flex-grow: 1   → 有多的空間就平均撐開 */
+    /* flex-shrink: 1 → 空間不足時可以縮 */
+    /* flex-basis     → 理想寬度 */
+    flex: 1 1 calc(50% - 16px);
+  }
+}
+
+/* 手機：一欄（<= 480px） */
+@media (max-width: 480px) {
+  .card {
+    flex: 1 1 100%;
+  }
+}
+
+/* =========================================
+   RWD（min-width）- 教學用，暫時註解
+   Mobile First
+   ========================================= */
+
+/*
+.card {
+  flex: 1 1 100%;
+}
+
+@media (min-width: 481px) {
+  .card {
+    flex: 1 1 calc(50% - 16px);
+  }
+}
+
+@media (min-width: 769px) {
+  .card {
+    flex: 1 1 calc(33.333% - 16px);
+  }
+}
+*/
+
+/* =========================================
+   教學重點速記
+   ========================================= */
+
+/*
+max-width：
+- 螢幕變小時套用
+- desktop first
+- 教學直覺、快速調整
+
+min-width：
+- 螢幕變大時套用
+- mobile first
+- 業界主流、維護性佳
+*/
