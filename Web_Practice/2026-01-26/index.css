@@ -1,0 +1,18 @@
+.wrap{
+  display: grid;
+  justify-items: center;
+}
+
+.content{
+  display: grid;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+#test-btn{
+  margin-bottom: 30px;
+}
+
+#result-img{
+  margin-bottom: 30px;
+}

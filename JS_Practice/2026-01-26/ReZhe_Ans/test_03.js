@@ -13,3 +13,8 @@
 
 const c = [0, 10, 20]
 
+const f = c.map((degree) => {
+  degree * 9 / 5 + 32
+})
+
+console.log(f)
