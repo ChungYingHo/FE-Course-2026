@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const button = document.getElementById('test-btn')
 const image = document.getElementById('result-img')
 const nationalEl = document.getElementById('national')
