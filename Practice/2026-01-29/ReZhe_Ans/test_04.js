@@ -38,9 +38,9 @@ const images = [
   { id: '40', author: 'Jane Smith', width: 3000 }
 ]
 
-//const photoArr = images.filter((image) => image.width > 2000)
+const photoArr = images.filter((image) => image.width > 2000)
 
-//console.log(photoArr)
+console.log(photoArr)
 
 
 function pictureArr(){
