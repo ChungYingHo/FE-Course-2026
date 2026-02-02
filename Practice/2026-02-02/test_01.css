@@ -1,0 +1,65 @@
+/* ========= 基本樣式 ========= */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f5f5f5;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+h1 {
+  margin-bottom: 24px;
+}
+
+h2 {
+  margin: 24px 0 12px;
+}
+
+/* 卡片樣式 */
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 24px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* layout 區塊樣式 */
+.sidebar,
+.content {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 24px;
+  border-radius: 8px;
+}
+
+/* ========= 題目作答區 ========= */
+
+/*
+  題目一：
+  - cards RWD 欄位變化
+  - <600px：1 欄
+  - 600~899px：2 欄
+  - >=900px：3 欄
+*/
+.cards {
+  /* TODO */
+}
+
+/*
+  題目二：
+  - layout RWD
+  - >=900px：sidebar 左 + content 右
+  - <900px：上下排列
+*/
+.layout {
+  /* TODO */
+}

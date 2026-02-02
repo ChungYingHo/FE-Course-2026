@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RWD 小考 test_01</title>
+  <link rel="stylesheet" href="test_01.css" />
+</head>
+<body>
+
+  <!--
+    RWD 小考說明
+    - 只能修改 test_01.css
+    - 不可引入任何 CSS framework
+    - 不可改 HTML 結構
+    - 可使用 flex 或 grid + media query
+  -->
+
+  <main class="container">
+    <h1>RWD 基礎測驗</h1>
+
+    <!--
+      題目一（基礎）：
+      cards 欄位 RWD
+
+      - 手機（< 600px）：1 欄
+      - 平板（600px ~ 899px）：2 欄
+      - 桌機（>= 900px）：3 欄
+    -->
+    <section>
+      <h2>題目一：Cards</h2>
+      <div class="cards">
+        <div class="card">Card 1</div>
+        <div class="card">Card 2</div>
+        <div class="card">Card 3</div>
+        <div class="card">Card 4</div>
+        <div class="card">Card 5</div>
+        <div class="card">Card 6</div>
+      </div>
+    </section>
+
+    <!--
+      題目二：
+      content layout RWD
+
+      - 桌機（>= 900px）：
+        左 sidebar（固定寬 200px）
+        右 content（自動填滿）
+
+      - 平板 / 手機（< 900px）：
+        sidebar 與 content 改為上下排列
+    -->
+    <section>
+      <h2>題目二：Layout</h2>
+
+      <div class="layout">
+        <aside class="sidebar">
+          Sidebar
+        </aside>
+
+        <div class="content">
+          Main Content
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
