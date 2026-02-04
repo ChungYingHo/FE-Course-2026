@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 // =======================================
 // 本週考題：Lorem Picsum（隨機作者相簿）
 // =======================================
@@ -20,6 +21,26 @@ const apiUrl = 'https://picsum.photos/v2/list'
 const galleryEl = document.querySelector('#gallery')
 const authorEl = document.querySelector('#author')
 const refreshBtn = document.querySelector('#refresh')
+const imgListEl = document.querySelector('#img_list')
+
+async function testAPI() {
+  try {
+    const response = await axios.get(apiUrl)
+    const user = response.data
+
+    galleryEl.src = user[0].download_url
+    galleryEl.alt = user[0].author
+
+    authorEl.textContent = `Author: ${user[0].author}`
+
+    console.log('user:', user)
+  } catch(error) {
+    console.log(error)
+  }
+}
+
+testAPI()
+refreshBtn.addEventListener('click', testAPI)
 
 // =======================================
 // 提示區（Hints）
@@ -58,9 +79,45 @@ const refreshBtn = document.querySelector('#refresh')
 // 3. 顯示該作者的所有圖片
 async function loadImagesByRandomAuthor () {
   // 在這裡開始作答
+  try{
+    const apiResponse = await axios.get(apiUrl)
+    const userApi = apiResponse.data
+
+    const writerList = userApi.map((photo) => photo.author)
+
+    const authorList = [...new Set(writerList)]
+
+    const writer = Math.floor(Math.random() * authorList.length)
+    const randomWriter = authorList[writer]
+
+    const writerPicture = userApi.filter((photograph) => photograph.author === randomWriter)
+
+
+    imgListEl.innerHTML = ''
+
+    galleryEl.src = writerPicture[0].download_url
+    galleryEl.alt = `photo by ${randomWriter}`
+    authorEl.textContent = `Author: ${randomWriter}`
+
+    writerPicture.forEach((picture) => {
+      const img = document.createElement('img')
+      img.src = picture.download_url
+      img.width = 150
+
+      img.addEventListener('click', () => {
+        galleryEl.src = picture.download_url
+        galleryEl.alt = `picture by ${randomWriter}`
+      })
+      imgListEl.appendChild(img)
+    })
+
+  }catch(error){
+    console.log(error)
+  }
 }
 
-
+loadImagesByRandomAuthor()
+refreshBtn.addEventListener('click', loadImagesByRandomAuthor)
 
 // =======================================
 // 事件處理

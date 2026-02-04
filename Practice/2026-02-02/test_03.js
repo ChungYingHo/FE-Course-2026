@@ -78,6 +78,14 @@ const response = {
 // - 可以思考「map 裡面再 map」
 // - 注意最終結果的陣列結構（是不是多了一層）
 
-const result =
+const result = response.data.map((person) => {
+  return person.images.map((photo) => {
+    return{
+      id: photo.id,
+      author : photo.author,
+      url: photo.download_url
+    }
+  })
+})
 
 console.log(result)
