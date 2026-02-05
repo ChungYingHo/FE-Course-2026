@@ -56,7 +56,7 @@ const response = {
 // 從 response.data 中篩選符合條件的資料
 // 並將結果指派給 result
 
-const result =
+const result = response.data.filter((person) => person.width >= 3000 && person.author === 'Paul Jarvis')
 
 // =======================================
 // 以下程式碼不用修改

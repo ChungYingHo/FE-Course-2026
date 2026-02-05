@@ -50,9 +50,33 @@ h2 {
   - 600~899px：2 欄
   - >=900px：3 欄
 */
+
 .cards {
   /* TODO */
+  display: grid;
+  gap: 16px;
 }
+
+
+@media(max-width:600px){
+.cards{
+  grid-template-columns: 1fr;
+  }
+}
+
+@media(min-width:600px) and (max-width:899px){
+  .cards{
+  grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(min-width:900px){
+  .cards{
+  grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
 
 /*
   題目二：
@@ -62,4 +86,30 @@ h2 {
 */
 .layout {
   /* TODO */
+  display: flex;
+}
+
+
+@media(min-width:900px){
+  .layout{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .sidebar{
+    width: 200px;
+  }
+
+  .content{
+    display: flex;
+    flex-grow: 1;
+}
+}
+
+
+@media(max-width:899px){
+  .layout{
+    display: flex;
+    flex-direction: column;
+  }
 }
