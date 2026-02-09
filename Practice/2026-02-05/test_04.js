@@ -11,3 +11,16 @@ const users = [
 //   { id: 2, name: 'May Chen', isAdmin: false },
 //   { id: 3, name: 'Tom Wang', isAdmin: false }
 // ]
+
+const newUser = users.map((newPerson) => {
+  const result =
+    {
+      id: newPerson.id,
+      name: `${newPerson.firstName} ${newPerson.lastName}`,
+      isAdmin: newPerson.role === 'admin'
+    }
+  return result
+})
+
+
+console.log(newUser)

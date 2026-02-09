@@ -18,7 +18,34 @@ const passengerInfos = [
 // 預期輸出：
 // [ 'Alice', 'David' ]
 
+const findBaby = passengerInfos.filter((person) => person.withInfant === true)
+
+const findPeople = findBaby.map((people) => {
+  let result = ''
+  passengers.forEach((passenger) =>{
+    if(people.passengerNumber ===  passenger.passengerNumber){
+      result = passenger.name
+    }
+  })
+  return result
+})
+
+console.log(findPeople)
 
 // 年紀超過 60 的乘客需要特別關照，請輸出一個陣列列出這些乘客的姓名
 // 預期輸出：
 // [ 'David' ]
+
+const findOldMan = passengerInfos.filter((oldPerson) => oldPerson.age > 60)
+
+const oldMan = findOldMan.map((man) => {
+  let newResult = ''
+  passengers.forEach((passenger) => {
+    if(man.passengerNumber === passenger.passengerNumber){
+      newResult = passenger.name
+    }
+  })
+  return newResult
+})
+
+console.log(oldMan)
