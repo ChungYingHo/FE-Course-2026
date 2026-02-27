@@ -23,3 +23,15 @@ const passengerInfos = [
 //   { name: 'David', seat: '14D', class: 'Business' },
 //   { name: 'Eve', seat: '3E', class: 'First' },
 // ]
+
+const newArr = passengers.map((people) => {
+  const newPerson = passengerInfos.find((person) => person.passengerNumber === people.passengerNumber)
+  return{
+    name : people.name,
+    seat : newPerson.seat,
+    class : newPerson.class
+  }
+})
+
+
+console.log(newArr)
