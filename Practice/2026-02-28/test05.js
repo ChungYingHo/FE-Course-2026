@@ -20,3 +20,12 @@ const passengers = [
 ]
 
 // passengers 是一個訂位紀錄，今天航空公司規定，若同一個訂位紀錄中有任一乘客是黑名單，則整個訂位紀錄都不能登機，請寫一個程式判斷 passengers 是否能登機
+
+const blackListPassengers = passengers.every(passenger => passenger.isBlacklisted === true)
+
+if(blackListPassengers){
+  console.log('可以登機')
+}else{
+  console.log('不可以登機')
+}
+
