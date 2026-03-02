@@ -274,7 +274,7 @@ console.log(result)
 // 只顯示有庫存商品
 // 計算所有有庫存商品總價
 // 找出最貴商品
-// 將商品價格由低到高排序
+
 
 const products = [
   { id: 1, name: 'T-shirt', price: 500, inStock: true },
@@ -298,6 +298,5 @@ const mostExpensive = products.reduce((best, current) => {
 
 console.log('最貴商品:', mostExpensive)
 
-const sortPrice= products.slice().sort((a, b) => a.price - b.price)
-console.log('由低到高排序:', sortPrice)
+
 
