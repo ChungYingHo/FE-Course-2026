@@ -8,20 +8,3 @@ const arr = [
 
 // 請寫一個程式接收一個參數 num，並回傳它的第一個出現位置，ex: 34 出現在第二列、第三行
 // 若找不到位置請輸出「找不到位置」
-
-function newArr(num){
-  for(let i = 0; i < arr.length; i++){
-    const whereFirst = arr[i]
-
-    for(let j = 0; j < whereFirst.length; j++){
-      const target = whereFirst[j]
-
-      if(num === target){
-        return(num, `出現在第${[i + 1]}列、第${[j + 1]}行`)
-      }
-    }
-  }
-  return '找不到位置'
-}
-
-console.log(newArr(34))
