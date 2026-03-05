@@ -7,3 +7,11 @@ const arr = [
 
 // 請寫一個程式，接受一參數 num，並輸出數字存不存在於二維陣列 arr 中。
 // 不可以使用 nested loop
+
+function newArr(num){
+  const findArr = arr.flat()
+  return findArr.includes(num)
+}
+
+console.log(newArr(90))
+console.log(newArr(10))
