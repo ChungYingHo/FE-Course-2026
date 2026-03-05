@@ -38,7 +38,7 @@ console.log(allNumberSquare())
 const prices = [120, 350, 80, 200]
 
 function totalSum(){
-  const total = 0
+  let total = 0
 
   for(let i = 0; i < prices.length; i++){
     total = total + prices[i]
