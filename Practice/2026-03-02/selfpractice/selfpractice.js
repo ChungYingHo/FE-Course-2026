@@ -128,7 +128,7 @@ const passengers = [
   { name: 'Charlie', blacklisted: true }
 ]
 
-const blacklisted = passengers.every((passenger) => passenger.blacklisted === true)
+const blacklisted = passengers.some((passenger) => passenger.blacklisted === true)
 
 console.log(blacklisted)
 
